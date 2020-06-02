@@ -16,12 +16,12 @@
     
     
 
-    <meta name="description" content="&amp;emsp;&amp;emsp;网格布局（Grid）是最强大的 CSS 布局方案。 它将网页划分成一个个网格，可以任意组合不同的网格，做出各种各样的布局。以前，只能通过复杂的 CSS 框架达到的效果，现在浏览器内置了。    一.基本概念  &amp;emsp;&amp;emsp;网格布局的基本概念是，定义一个容器，通常称为container，容器内有依据网格进行定位的子元素(item),下面的代码里面，最外层的cl">
+    <meta name="description" content="&amp;emsp;&amp;emsp;网格布局（Grid）是最强大的 CSS 布局方案。 它将网页划分成一个个网格，可以任意组合不同的网格，做出各种各样的布局。以前，只能通过复杂的 CSS 框架达到的效果，现在浏览器内置了。    一.基本概念  &amp;emsp;&amp;emsp;网格布局的基本概念是，定义一个容器，通常称为container，容器内有依据单元格进行定位的子元素(item),下面的代码里面，最外层的c">
 <meta property="og:type" content="article">
 <meta property="og:title" content="grid布局 | 夏与灰的博客">
 <meta property="og:url" content="https://situocwt.github.io/2020/06/01/grid/index.html">
 <meta property="og:site_name" content="夏与灰的博客">
-<meta property="og:description" content="&amp;emsp;&amp;emsp;网格布局（Grid）是最强大的 CSS 布局方案。 它将网页划分成一个个网格，可以任意组合不同的网格，做出各种各样的布局。以前，只能通过复杂的 CSS 框架达到的效果，现在浏览器内置了。    一.基本概念  &amp;emsp;&amp;emsp;网格布局的基本概念是，定义一个容器，通常称为container，容器内有依据网格进行定位的子元素(item),下面的代码里面，最外层的cl">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;网格布局（Grid）是最强大的 CSS 布局方案。 它将网页划分成一个个网格，可以任意组合不同的网格，做出各种各样的布局。以前，只能通过复杂的 CSS 框架达到的效果，现在浏览器内置了。    一.基本概念  &amp;emsp;&amp;emsp;网格布局的基本概念是，定义一个容器，通常称为container，容器内有依据单元格进行定位的子元素(item),下面的代码里面，最外层的c">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/1.png">
 <meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/1.png">
@@ -29,8 +29,18 @@
 <meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/3.png">
 <meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/4.png">
 <meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/5.png">
+<meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/6.png">
+<meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/7.png">
+<meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/8.png">
+<meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/9.png">
+<meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/10.png">
+<meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/11.png">
+<meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/12.png">
+<meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/13.png">
+<meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/14.png">
+<meta property="og:image" content="https://situocwt.github.io/2020/06/01/grid/15.png">
 <meta property="article:published_time" content="2020-06-01T03:38:58.000Z">
-<meta property="article:modified_time" content="2020-06-01T14:49:27.797Z">
+<meta property="article:modified_time" content="2020-06-02T02:20:41.276Z">
 <meta property="article:author" content="xiayuhui">
 <meta property="article:tag" content="css">
 <meta name="twitter:card" content="summary">
@@ -201,13 +211,13 @@ classes that you can use:
 
 <h3 id="一-基本概念"><a href="#一-基本概念" class="headerlink" title="一.基本概念"></a><strong>一.基本概念</strong></h3><br>
 
-<p>&emsp;&emsp;网格布局的基本概念是，定义一个容器，通常称为container，容器内有依据网格进行定位的子元素(item),下面的代码里面，最外层的class为container的<code>&lt;div&gt;</code>元素就是容器，内层的三个<code>&lt;div&gt;</code>元素就是子元素。</p>
+<p>&emsp;&emsp;网格布局的基本概念是，定义一个容器，通常称为container，容器内有依据单元格进行定位的子元素(item),下面的代码里面，最外层的class为container的<code>&lt;div&gt;</code>元素就是容器，内层的三个<code>&lt;div&gt;</code>元素就是子元素。</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span></span><br><span class="line">        haha</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span></span><br><span class="line">        haha</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span></span><br><span class="line">        haha</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"item"</span>&gt;</span></span><br><span class="line">        haha</span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <br>
 
 <h3 id="二-行、列和单元格"><a href="#二-行、列和单元格" class="headerlink" title="二.行、列和单元格"></a><strong>二.行、列和单元格</strong></h3><br>
 
-<p>&emsp;&emsp;在容器内，由子元素水平排列而成的区域，我们称之为”行”(Row)，由子元素垂直排列而成的区域，我们称之为”列”(Column)，”行”和”列”交叉的区域，称之为”单元格”(cell)。<br><br></p>
+<p>&emsp;&emsp;在容器内，水平排列而成的区域，我们称之为”行”(Row)，垂直排列而成的区域，我们称之为”列”(Column)，”行”和”列”交叉的区域，称之为”单元格”(cell)。<br><br></p>
 <h3 id="三-使用grid"><a href="#三-使用grid" class="headerlink" title="三.使用grid"></a><strong>三.使用grid</strong></h3><br>
 
 <h4 id="emsp-1-开启grid布局"><a href="#emsp-1-开启grid布局" class="headerlink" title="&emsp;1.开启grid布局"></a><strong>&emsp;1.开启grid布局</strong></h4><br>
@@ -222,12 +232,12 @@ classes that you can use:
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">grid-template-columns</span>: <span class="number">1</span>fr <span class="number">1</span>fr <span class="number">1</span>fr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <br>
 
-<p>&emsp;&emsp;由于我这边容器宽度为300px，所以显示的结果和上图一样，此时这边grid的子元素每个占据了三分之一的宽度。<br><img src="/2020/06/01/grid/1.png" alt="图1"><br>&emsp;&emsp;如果修改为以下代码，则按比例，第一个和第三个子元素的宽度为四分之一，中间子元素的宽度为二分之一，如代码后的图所示。</p>
+<p>&emsp;&emsp;由于我这边容器宽度为300px，所以显示的结果和上图一样，此时这边grid的单元格每个占据了三分之一的宽度。<br><img src="/2020/06/01/grid/1.png" alt="图1"><br>&emsp;&emsp;如果修改为以下代码，则按比例，第一个和第三个单元格的宽度为四分之一，中间单元格的宽度为二分之一，如代码后的图所示。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">grid-template-columns</span>: <span class="number">1</span>fr <span class="number">2</span>fr <span class="number">1</span>fr;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><img src="/2020/06/01/grid/2.png" alt="图2"></p>
-<h4 id="emsp-2-子元素的间距设置"><a href="#emsp-2-子元素的间距设置" class="headerlink" title="&emsp;2.子元素的间距设置"></a><strong>&emsp;2.子元素的间距设置</strong></h4><br>
+<h4 id="emsp-2-单元格的间距设置"><a href="#emsp-2-单元格的间距设置" class="headerlink" title="&emsp;2.单元格的间距设置"></a><strong>&emsp;2.单元格的间距设置</strong></h4><br>
 
-<p>&emsp;&emsp;grid可以很方便的给子元素之间设置间距，其主要使用的属性是<code>grid-gap</code>，举个例子，在上面的代码里面，我在容器container的样式中设置了<code>grid-gap:24px</code>,那么子元素的行间距和列间距就会变为24px。</p>
+<p>&emsp;&emsp;grid可以很方便的给单元格之间设置间距，其主要使用的属性是<code>grid-gap</code>，举个例子，在上面的代码里面，我在容器container的样式中设置了<code>grid-gap:24px</code>,那么单元格的行间距和列间距就会变为24px。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">grid-template-columns</span>: <span class="number">1</span>fr <span class="number">2</span>fr <span class="number">1</span>fr;</span><br><span class="line">    <span class="attribute">grid-gap</span>:<span class="number">24px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <br>
 
@@ -238,6 +248,55 @@ classes that you can use:
 <p><img src="/2020/06/01/grid/4.png" alt="图4"><br>&emsp;&emsp;<code>grid-column-gap</code>(列间距)</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">grid-template-columns</span>: <span class="number">1</span>fr <span class="number">2</span>fr <span class="number">1</span>fr;</span><br><span class="line">    <span class="attribute">grid-column-gap</span>:<span class="number">24px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><img src="/2020/06/01/grid/5.png" alt="图5"></p>
+<h4 id="emsp-3-单元格内容的位置"><a href="#emsp-3-单元格内容的位置" class="headerlink" title="&emsp;3.单元格内容的位置"></a><strong>&emsp;3.单元格内容的位置</strong></h4><br>
+
+<p>&emsp;&emsp;grid除了可以设置单元格的大小，还可以给单元格内的子元素设置位置。</p>
+<p>&emsp;&emsp;<code>justify-items</code> 属性,可以设置子元素在单元格内的水平位置，<code>align-items</code> 属性,可以设置子元素在单元格内的垂直位置,两个属性的取值是一样的分别有以下4种。</p>
+<p>&emsp;&emsp;1. <code>start</code><br>&emsp;&emsp;2. <code>end</code><br>&emsp;&emsp;3. <code>center</code><br>&emsp;&emsp;4. <code>stretch</code>(默认值)</p>
+<p>&emsp;&emsp;当设置了<code>justify-items: start</code>属性时，单元格的内容会对齐单元格的起始边缘，即左对齐。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">grid-template-columns</span>: <span class="number">1</span>fr <span class="number">1</span>fr <span class="number">1</span>fr;</span><br><span class="line">    <span class="attribute">justify-items</span>: start;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">25px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: green;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">color</span>: white;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">25px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/06/01/grid/6.png" alt="图6"></p>
+<p>&emsp;&emsp;同理，当设置<code>justify-items: end</code>属性时，单元格的内容会对齐单元格的结束边缘，即右对齐。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">grid-template-columns</span>: <span class="number">1</span>fr <span class="number">1</span>fr <span class="number">1</span>fr;</span><br><span class="line">    <span class="attribute">justify-items</span>: end;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">25px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: green;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">color</span>: white;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">25px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/06/01/grid/7.png" alt="图7"></p>
+<p>&emsp;&emsp;<code>justify-items: center</code>居中对齐</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">justify-items</span>: content;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/06/01/grid/8.png" alt="图8"></p>
+<p>&emsp;&emsp;<code>stretch</code>是默认值，代表拉伸，占满整个单元格宽度(当子元素未定义大小时)<br><br></p>
+<p>&emsp;&emsp;<code>align-items</code>的作用和<code>justify-items</code>的效果一样，只是一个作用于水平方向，一个作用于垂直方向，就不一一演示了，如果要同时设置这两个属性时，可以使用<code>place-items</code>这个属性，这个属性传入两个值，<br>第一个是代表<code>align-items</code>的值，第二个是代表<code>justify-items</code>的值，当只传入一个值时，第二个值默认与第一个值相同，写法为<code>place-items: &lt;align-items&gt; &lt;justify-items&gt;</code>，例如<code>place-items: center end</code>,代表在水平方向右对齐，垂直方向居中。</p>
+<p><img src="/2020/06/01/grid/9.png" alt="图9"></p>
+<h4 id="emsp-3-内容区域在容器的位置"><a href="#emsp-3-内容区域在容器的位置" class="headerlink" title="&emsp;3.内容区域在容器的位置"></a><strong>&emsp;3.内容区域在容器的位置</strong></h4><br>
+
+<p>&emsp;&emsp;当未使用浮动大小时(若使用浮动宽度或者未设置大小，内容区域会占满整个容器)，我们可以对内容区域在容器内的位置进行设置。<br>&emsp;&emsp;<code>justify-content</code> 属性,可以设置内容区域在容器内的水平位置，<code>align-content</code> 属性,可以设置内容区域在容器内的垂直位置,两个属性的取值有以下几种。</p>
+<p>&emsp;&emsp;1. <code>start</code><br>&emsp;&emsp;2. <code>end</code><br>&emsp;&emsp;3. <code>center</code><br>&emsp;&emsp;4. <code>stretch</code><br>&emsp;&emsp;5. <code>space-around</code><br>&emsp;&emsp;6. <code>space-between</code><br>&emsp;&emsp;7. <code>space-evenly</code></p>
+<p>&emsp;&emsp;以水平方向<code>justify-content</code>为例，此时设置值为<code>start</code>,则内容区域会在容器内部左边</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: grid;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">grid-template-columns</span>: <span class="number">100px</span> <span class="number">100px</span> <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">place-items</span>: center;</span><br><span class="line">    <span class="attribute">justify-content</span>: start;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.item</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">80px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: green;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">color</span>: white;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">25px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/06/01/grid/10.png" alt="图10"></p>
+<p>&emsp;&emsp;值为<code>end</code>时,则内容区域会在容器内部右边</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">justify-content</span>: end;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/06/01/grid/11.png" alt="图11"></p>
+<p>&emsp;&emsp;值为<code>center</code>时,则内容区域会在容器内部居中</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">justify-content</span>: center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/2020/06/01/grid/12.png" alt="图12"></p>
+<p>&emsp;&emsp;值为<code>stretch</code>时,当内容区域没有指定大小时，会拉伸占据整个容器</p>
+<p>&emsp;&emsp;值为<code>space-around</code>时,每个项目的间隔相等，但是项目与容器边框的间隔是项目与项目之间的一半</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">justify-content</span>: space-around;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/06/01/grid/13.png" alt="图13"></p>
+<p>&emsp;&emsp;值为<code>space-between</code>时,每个项目的间隔相等，但是项目与容器边框没有间隔</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">justify-content</span>: space-between;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/06/01/grid/14.png" alt="图14"></p>
+<p>&emsp;&emsp;值为<code>space-evenly</code>时,每个项目两侧的间隔相等，且项目与容器边框的间隔与项目和项目之间的间隔一样大</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span>&#123;</span><br><span class="line">    <span class="attribute">justify-content</span>: space-evenly;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/2020/06/01/grid/15.png" alt="图15"></p>
+<h3 id="四-结语"><a href="#四-结语" class="headerlink" title="四.结语"></a><strong>四.结语</strong></h3><br>
+
+<p>&emsp;&emsp;grid布局可以非常方便的组合出各式各样的布局，基本能满足我们日常开发中的布局效果，而且grid布局的功能还远远不止我上面所写的内容，有兴趣的小伙伴可以更加深入的去了解grid布局，相信一定会有很大的收获的。</p>
 
   </section>
 
